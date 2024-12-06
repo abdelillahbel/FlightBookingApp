@@ -1,16 +1,33 @@
-# tickets_app
+# ✈️ FlightBook: Simple Ticket Booking App
 
-A Tickets Flutter project.
+## 📱 App Overview
 
-## Getting Started
+FlightBook is a straightforward Flutter mobile application for booking flight tickets, designed to provide a simple and user-friendly flight reservation experience.
 
-This project is a starting point for a Flutter application.
+## ✨ Core Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🔍 Flight Search
+  - [x] Search flights between cities
+  - [ ] Select departure and return dates
+  - [x] View available flights
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 💺 Basic Seat Selection
+  - [ ] Choose seat preferences
+  - [x] View seat availability
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 💳 Simple Booking Process
+  - [ ] Quick ticket reservation
+  - [x] Basic payment integration
+  - [x] Booking confirmation
+
+## 🛠 Tech Stack
+
+- Flutter 3.x
+- Dart
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Flutter & Dart SDK
+- Android Studio / VS Code + Flutter & Dart Plugins Installed
