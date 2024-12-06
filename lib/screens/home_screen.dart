@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Good morning", style: AppStyles.headLineStyle3),
+                        Text("Hey there, future traveler!", style: AppStyles.headLineStyle3),
                         SizedBox(
                           height: 5,
                         ),
@@ -40,9 +40,10 @@ class HomeScreen extends StatelessWidget {
                         width: 50,
                         height: 50,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
+                            borderRadius: BorderRadius.circular(100),
+                            color: Colors.white,
                             image: DecorationImage(
-                                image: AssetImage(AppMedia.logo))))
+                                image: AssetImage(AppMedia.airplan1))))
                   ],
                 ),
                 SizedBox(
