@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tickets_app/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/core/res/styles/app_styles.dart';
 
 class AppTexts extends StatelessWidget {
   const AppTexts({super.key, required this.titleText, required this.descText});
@@ -20,9 +20,7 @@ class AppTexts extends StatelessWidget {
           onTap: () {},
           child: Text(
             descText,
-            style: AppStyles.textStyle.copyWith(
-              color: AppStyles.primaryColor
-            ),
+            style: AppStyles.textStyle.copyWith(color: AppStyles.primaryColor),
           ),
         )
       ],

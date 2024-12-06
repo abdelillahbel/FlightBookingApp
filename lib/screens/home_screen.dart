@@ -1,8 +1,8 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:tickets_app/core/res/media.dart';
-import 'package:tickets_app/core/res/styles/app_styles.dart';
-import 'package:tickets_app/core/widgets/app_texts.dart';
+import 'package:flightbookapp/core/res/media.dart';
+import 'package:flightbookapp/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/core/widgets/app_texts.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -26,12 +26,13 @@ class HomeScreen extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Hey there, future traveler!", style: AppStyles.headLineStyle3),
+                        Text("Hey there, future traveler!",
+                            style: AppStyles.headLineStyle3),
                         SizedBox(
                           height: 5,
                         ),
                         Text(
-                          "Book Tickets",
+                          "Book Tickets & Fly",
                           style: AppStyles.headLineStyle1,
                         )
                       ],

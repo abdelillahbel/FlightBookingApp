@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tickets_app/core/bottom_nav_bar.dart';
+import 'package:flightbookapp/core/bottom_nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
