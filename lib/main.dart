@@ -2,14 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:tickets_app/core/bottom_nav_bar.dart';
 
 void main() {
-  var myList = [
-    "Flutter",
-    "Kotlin",
-    "Java",
-    "Go",
-    "Scala",
-  ];
-
   runApp(const MyApp());
 }
 
