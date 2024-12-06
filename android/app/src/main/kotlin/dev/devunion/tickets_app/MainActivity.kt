@@ -1,4 +1,4 @@
-package dev.devunion.tickets_app
+package dev.devunion.flightbookapp
 
 import io.flutter.embedding.android.FlutterActivity
 
