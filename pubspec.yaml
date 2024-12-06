@@ -1,5 +1,5 @@
-name: tickets_app
-description: "A Tickets Flutter project."
+name: flightbookapp
+description: "Simple Ticket Booking App"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
@@ -37,7 +37,7 @@ dependencies:
   fluentui_icons: ^1.0.0
   get: ^4.6.6
   barcode_widget: ^2.0.4
-  gap: ^3.0.1 
+  gap: ^3.0.1
   fluttertoast: ^8.2.8
 
 dev_dependencies:
