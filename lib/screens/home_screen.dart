@@ -63,14 +63,17 @@ class HomeScreen extends StatelessWidget {
                       Text("Search")
                     ],
                   ),
+                ),
+                SizedBox(
+                  height: 40,
+                ),
+                AppTexts(
+                  titleText: "Upcoming Flights",
+                  descText: "View all",
                 )
               ],
             ),
           ),
-          SizedBox(
-            height: 40,
-          ),
-          AppTexts()
         ],
       ),
     );
