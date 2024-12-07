@@ -1,3 +1,4 @@
+import 'package:flightbookapp/core/widgets/ticket_view.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flightbookapp/core/res/media.dart';
@@ -72,7 +73,8 @@ class HomeScreen extends StatelessWidget {
                 AppTexts(
                   titleText: "Upcoming Flights",
                   descText: "View all",
-                )
+                ),
+                TicketView()
               ],
             ),
           ),
