@@ -1,31 +1,31 @@
 # ✈️ FlightBook: Simple Ticket Booking App
 
-## 📱 App Overview
+## App Overview
 
 FlightBook is a straightforward Flutter mobile application for booking flight tickets, designed to provide a simple and user-friendly flight reservation experience.
 
-## ✨ Core Features
+## Core Features
 
-- 🔍 Flight Search
+- Flight Search
   - [x] Search flights between cities
   - [ ] Select departure and return dates
   - [x] View available flights
 
-- 💺 Basic Seat Selection
+- Basic Seat Selection
   - [ ] Choose seat preferences
   - [x] View seat availability
 
-- 💳 Simple Booking Process
+- Simple Booking Process
   - [ ] Quick ticket reservation
   - [x] Basic payment integration
   - [x] Booking confirmation
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - Flutter 3.x
 - Dart
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
