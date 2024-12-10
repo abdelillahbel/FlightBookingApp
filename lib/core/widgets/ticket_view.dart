@@ -1,5 +1,6 @@
 import 'package:flightbookapp/core/res/styles/app_styles.dart';
 import 'package:flightbookapp/core/widgets/app_layout_builder.dart';
+import 'package:flightbookapp/core/widgets/circle_half.dart';
 import 'package:flightbookapp/core/widgets/flight_circle.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
@@ -100,12 +101,13 @@ class TicketView extends StatelessWidget {
               color: AppStyles.ticketBottomColor,
               child: Row(
                 children: [
-                  SizedBox(
-                    height: 20,
-                    width: 10,
-                    child: DecoratedBox(
-                        decoration: BoxDecoration(color: Colors.black)),
-                  )
+                  CircleHalf(
+                    isRight: false,
+                  ),
+                  Expanded(child: Container()),
+                  CircleHalf(
+                    isRight: true,
+                  ),
                 ],
               ),
             ),
