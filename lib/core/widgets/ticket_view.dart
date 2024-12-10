@@ -46,6 +46,7 @@ class TicketView extends StatelessWidget {
                             height: 24,
                             child: AppLayoutBuilder(
                               randomDivider: 6,
+                              color: Colors.white,
                             ),
                           ),
                           Center(
@@ -104,7 +105,12 @@ class TicketView extends StatelessWidget {
                   CircleHalf(
                     isRight: false,
                   ),
-                  Expanded(child: Container()),
+                  Expanded(
+                      child: AppLayoutBuilder(
+                    randomDivider: 12,
+                    width: 4,
+                    color: Colors.grey,
+                  )),
                   CircleHalf(
                     isRight: true,
                   ),
@@ -138,6 +144,7 @@ class TicketView extends StatelessWidget {
                             height: 24,
                             child: AppLayoutBuilder(
                               randomDivider: 6,
+                              color: Colors.black,
                             ),
                           ),
                           Center(
