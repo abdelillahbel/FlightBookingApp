@@ -8,8 +8,8 @@ class AppStyles {
   static Color textColor = const Color(0xFF3B3B3B);
 
   // ticket color
-  static Color ticketTopColor = const Color(0xFF007BFF); // vibrant blue
-  static Color ticketBottomColor = const Color(0xFFFF6347); // bright orange
+  static Color ticketTopColor = Color(0xFFcc0001);
+  static Color ticketBottomColor = const Color.fromARGB(255, 255, 255, 255);
 
   static TextStyle textStyle =
       TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: textColor);
