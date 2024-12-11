@@ -34,13 +34,11 @@ FlightBook is a user-friendly Flutter mobile application designed for booking fl
   <tr>
     <td> <img src="screenshots/home.png" alt="Home Screen" width="200"/></td>
     <td><img src="screenshots/screen2.png" alt="Flight Search"  width="200"/></td>
-  </tr>
-  <tr>
-    <td> <img src="screenshots/screen2.png" alt="Seat Selection"  width="200"/></td>
+     <td> <img src="screenshots/screen2.png" alt="Seat Selection"  width="200"/></td>
     <td> <img src="screenshots/screen2.png" alt="Booking Confirmation"width="200"/></td>
   </tr>
+ 
 </table>
-
 
 ## Getting Started
 
