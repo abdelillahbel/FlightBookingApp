@@ -1,3 +1,4 @@
+import 'package:flightbookapp/screens/all_tickets_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flightbookapp/core/res/styles/app_styles.dart';
 
@@ -17,7 +18,14 @@ class AppTexts extends StatelessWidget {
           style: AppStyles.headLineStyle2,
         ),
         InkWell(
-          onTap: () {},
+          onTap: () {
+            Navigator.push<void>(
+              context,
+              MaterialPageRoute<void>(
+                builder: (BuildContext context) => const AllTicketsScreen(),
+              ),
+            );
+          },
           child: Text(
             descText,
             style: AppStyles.textStyle.copyWith(color: AppStyles.primaryColor),
