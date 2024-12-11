@@ -2,6 +2,8 @@ import 'package:flightbookapp/core/res/styles/app_styles.dart';
 import 'package:flightbookapp/core/widgets/app_layout_builder.dart';
 import 'package:flightbookapp/core/widgets/circle_half.dart';
 import 'package:flightbookapp/core/widgets/flight_circle.dart';
+import 'package:flightbookapp/core/widgets/styled_text_headline_four.dart';
+import 'package:flightbookapp/core/widgets/styled_text_headline_three.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
@@ -32,10 +34,8 @@ class TicketView extends StatelessWidget {
                   // destinations with codes
                   Row(
                     children: [
-                      Text(
-                        "ORN",
-                        style: AppStyles.headLineStyle3
-                            .copyWith(color: Colors.white),
+                      StyledTextHeadlineThree(
+                        text: "ORN",
                       ),
                       Expanded(child: Container()),
                       FlightCircle(),
@@ -62,10 +62,8 @@ class TicketView extends StatelessWidget {
                       )),
                       FlightCircle(),
                       Expanded(child: Container()),
-                      Text(
-                        "DXB",
-                        style: AppStyles.headLineStyle3
-                            .copyWith(color: Colors.white),
+                      StyledTextHeadlineThree(
+                        text: "DXB",
                       )
                     ],
                   ),
@@ -76,28 +74,25 @@ class TicketView extends StatelessWidget {
                   // destinations names and time
                   Row(
                     children: [
-                      Text(
-                        "Oran",
-                        style: AppStyles.headLineStyle3
-                            .copyWith(color: Colors.white),
-                      ),
+                      SizedBox(
+                          width: 100,
+                          child: StyledTextHeadlineFour(text: "Oran")),
                       Expanded(child: Container()),
-                      Text(
-                        "8H 30M",
-                        style: AppStyles.headLineStyle3
-                            .copyWith(color: Colors.white),
-                      ),
+                      StyledTextHeadlineFour(text: "09:30 AM"),
                       Expanded(child: Container()),
-                      Text(
-                        "Dubai",
-                        style: AppStyles.headLineStyle3
-                            .copyWith(color: Colors.white),
+                      SizedBox(
+                        width: 100,
+                        child: StyledTextHeadlineFour(
+                          text: "Dubai",
+                          textAlign: TextAlign.end,
+                        ),
                       )
                     ],
                   )
                 ],
               ),
             ),
+            // Ticket middle section
             Container(
               color: AppStyles.ticketBottomColor,
               child: Row(
@@ -131,37 +126,19 @@ class TicketView extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        "ORN",
+                        "1 May",
                         style: AppStyles.headLineStyle3
                             .copyWith(color: Colors.black),
                       ),
                       Expanded(child: Container()),
-                      FlightCircle(),
-                      Expanded(
-                          child: Stack(
-                        children: [
-                          SizedBox(
-                            height: 24,
-                            child: AppLayoutBuilder(
-                              randomDivider: 6,
-                              color: Colors.black,
-                            ),
-                          ),
-                          Center(
-                            child: Transform.rotate(
-                              angle: -4.8,
-                              child: Icon(
-                                Icons.local_airport_rounded,
-                                color: Colors.black,
-                              ),
-                            ),
-                          )
-                        ],
-                      )),
-                      FlightCircle(),
+                      Text(
+                        "09:00 AM",
+                        style: AppStyles.headLineStyle3
+                            .copyWith(color: Colors.black),
+                      ),
                       Expanded(child: Container()),
                       Text(
-                        "DXB",
+                        "13",
                         style: AppStyles.headLineStyle3
                             .copyWith(color: Colors.black),
                       )
@@ -175,19 +152,19 @@ class TicketView extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        "Oran",
+                        "Date",
                         style: AppStyles.headLineStyle3
                             .copyWith(color: Colors.black),
                       ),
                       Expanded(child: Container()),
                       Text(
-                        "8H 30M",
+                        "Departure time",
                         style: AppStyles.headLineStyle3
                             .copyWith(color: Colors.black),
                       ),
                       Expanded(child: Container()),
                       Text(
-                        "Dubai",
+                        "Number",
                         style: AppStyles.headLineStyle3
                             .copyWith(color: Colors.black),
                       )
