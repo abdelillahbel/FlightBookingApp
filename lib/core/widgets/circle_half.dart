@@ -1,7 +1,7 @@
+import 'package:flightbookapp/core/res/styles/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CircleHalf extends StatelessWidget {
-
   final bool isRight;
 
   const CircleHalf({super.key, required this.isRight});
@@ -13,7 +13,7 @@ class CircleHalf extends StatelessWidget {
       width: 10,
       child: DecoratedBox(
           decoration: BoxDecoration(
-              color: Colors.black,
+              color: AppStyles.bgColor,
               borderRadius: isRight == true
                   ? BorderRadius.only(
                       topLeft: Radius.circular(10),
