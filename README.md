@@ -7,15 +7,18 @@ FlightBook is a user-friendly Flutter mobile application designed for booking fl
 ## Features
 
 ### Flight Search
+
 - [x] Search flights between cities
 - [ ] Select departure and return dates
 - [x] View available flights
 
 ### Seat Selection
+
 - [ ] Choose seat preferences
 - [x] View seat availability
 
 ### Booking Process
+
 - [ ] Quick ticket reservation
 - [x] Basic payment integration
 - [x] Booking confirmation
@@ -27,24 +30,17 @@ FlightBook is a user-friendly Flutter mobile application designed for booking fl
 
 ## Screenshots
 
-<div style="display: flex; flex-wrap: wrap;">
-  <div style="flex: 1; margin: 10px;">
-    <img src="screenshots/home.png" alt="Home Screen" style="width: 200;"/>
-    <p style="text-align: center;">Home Screen</p>
-  </div>
-  <div style="flex: 1; margin: 10px;">
-    <img src="screenshots/screen2.png" alt="Flight Search" style="width: 200;"/>
-    <p style="text-align: center;">Flight Search</p>
-  </div>
-  <div style="flex: 1; margin: 10px;">
-    <img src="screenshots/screen2.png" alt="Seat Selection" style="width: 200;"/>
-    <p style="text-align: center;">Seat Selection</p>
-  </div>
-  <div style="flex: 1; margin: 10px;">
-    <img src="screenshots/screen2.png" alt="Booking Confirmation" style="width: 200;"/>
-    <p style="text-align: center;">Booking Confirmation</p>
-  </div>
-</div>
+<table>
+  <tr>
+    <td> <img src="screenshots/home.png" alt="Home Screen" width="200"/></td>
+    <td><img src="screenshots/screen2.png" alt="Flight Search"  width="200"/></td>
+  </tr>
+  <tr>
+    <td> <img src="screenshots/screen2.png" alt="Seat Selection"  width="200"/></td>
+    <td> <img src="screenshots/screen2.png" alt="Booking Confirmation"width="200"/></td>
+  </tr>
+</table>
+
 
 ## Getting Started
 
