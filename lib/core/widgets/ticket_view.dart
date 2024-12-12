@@ -87,7 +87,7 @@ class TicketView extends StatelessWidget {
                       SizedBox(
                         width: 100,
                         child: StyledTextHeadlineFour(
-                          text: ticket["to"]["code"],
+                          text: ticket["to"]["name"],
                           textAlign: TextAlign.end,
                         ),
                       )
