@@ -3,10 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:flightbookapp/core/res/styles/app_styles.dart';
 
 class AppTexts extends StatelessWidget {
-  const AppTexts({super.key, required this.titleText, required this.descText});
-
   final String titleText;
   final String descText;
+  final VoidCallback func;
+
+  const AppTexts(
+      {super.key,
+      required this.titleText,
+      required this.descText,
+      required this.func});
 
   @override
   Widget build(BuildContext context) {
@@ -18,14 +23,7 @@ class AppTexts extends StatelessWidget {
           style: AppStyles.headLineStyle2,
         ),
         InkWell(
-          onTap: () {
-            Navigator.push<void>(
-              context,
-              MaterialPageRoute<void>(
-                builder: (BuildContext context) => const AllTicketsScreen(),
-              ),
-            );
-          },
+          onTap: func,
           child: Text(
             descText,
             style: AppStyles.textStyle.copyWith(color: AppStyles.primaryColor),
