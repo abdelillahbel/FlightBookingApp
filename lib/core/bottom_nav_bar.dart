@@ -1,4 +1,4 @@
-import 'package:flightbookapp/screens/home_screen.dart';
+import 'package:flightbookapp/screens/home/home_screen.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 

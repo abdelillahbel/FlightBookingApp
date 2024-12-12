@@ -1,7 +1,7 @@
 import 'package:flightbookapp/core/data/hotels_list.dart';
 import 'package:flightbookapp/core/data/tickets_data.dart';
 import 'package:flightbookapp/core/widgets/ticket_view.dart';
-import 'package:flightbookapp/screens/widgets/hotel_card.dart';
+import 'package:flightbookapp/screens/home/widgets/hotel_card.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flightbookapp/core/res/media.dart';
