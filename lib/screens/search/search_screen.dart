@@ -1,4 +1,5 @@
 import 'package:flightbookapp/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/screens/search/widgets/search_tabs.dart';
 import 'package:flutter/material.dart';
 
 class SearchScreen extends StatelessWidget {
@@ -17,7 +18,8 @@ class SearchScreen extends StatelessWidget {
           Text(
             "What are\nyou looking for?",
             style: AppStyles.headLineStyle1.copyWith(fontSize: 32),
-          )
+          ),
+          SearchTabs()
         ],
       ),
     );
