@@ -19,6 +19,9 @@ class SearchScreen extends StatelessWidget {
             "What are\nyou looking for?",
             style: AppStyles.headLineStyle1.copyWith(fontSize: 32),
           ),
+          SizedBox(
+            height: 20,
+          ),
           SearchTabs()
         ],
       ),
