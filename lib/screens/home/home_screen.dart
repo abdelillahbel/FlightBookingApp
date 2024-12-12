@@ -42,13 +42,14 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                     Container(
-                        width: 50,
+                        width: 70,
                         height: 50,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(0),
+                            color: Colors.transparent,
                             image: DecorationImage(
-                                image: AssetImage(AppMedia.airplan1))))
+                              fit: BoxFit.fill,
+                                image: AssetImage(AppMedia.airalgeria))))
                   ],
                 ),
                 SizedBox(
