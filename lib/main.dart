@@ -1,3 +1,4 @@
+import 'package:flightbookapp/screens/all_tickets_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flightbookapp/core/bottom_nav_bar.dart';
 
@@ -17,7 +18,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: BottomNavBar(),
+      routes: {
+        "/": (context) => BottomNavBar(),
+        "all_tickets": (context) => AllTicketsScreen()
+      },
     );
   }
 }
