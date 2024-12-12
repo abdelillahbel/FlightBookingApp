@@ -1,5 +1,7 @@
+import 'package:flightbookapp/core/data/hotels_list.dart';
 import 'package:flightbookapp/core/data/tickets_data.dart';
 import 'package:flightbookapp/core/widgets/ticket_view.dart';
+import 'package:flightbookapp/screens/widgets/hotel_card.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flightbookapp/core/res/media.dart';
@@ -21,6 +23,7 @@ class HomeScreen extends StatelessWidget {
           Container(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -28,13 +31,12 @@ class HomeScreen extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Hey there, future traveler!",
-                            style: AppStyles.headLineStyle3),
+                        Text("Hey there", style: AppStyles.headLineStyle3),
                         SizedBox(
                           height: 5,
                         ),
                         Text(
-                          "Book Tickets & Fly",
+                          "Book Tickets",
                           style: AppStyles.headLineStyle1,
                         )
                       ],
@@ -74,6 +76,7 @@ class HomeScreen extends StatelessWidget {
                 AppTexts(
                   titleText: "Upcoming Flights",
                   descText: "View all",
+                  func: () => Navigator.pushNamed(context, "all_tickets"),
                 ),
                 SizedBox(
                   height: 20,
@@ -83,7 +86,25 @@ class HomeScreen extends StatelessWidget {
                     child: Row(
                       children: ticketList
                           .take(2)
-                          .map((singleTicket) => TicketView(ticket:singleTicket))
+                          .map((singleTicket) =>
+                              TicketView(ticket: singleTicket))
+                          .toList(),
+                    )),
+                SizedBox(
+                  height: 40,
+                ),
+                AppTexts(
+                  titleText: "Hotels",
+                  descText: "View all",
+                  func: () {},
+                ),
+                SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: hotelsList
+                          .take(2)
+                          .map((singleHotel) =>
+                              HotelCard(hotel: singleHotel))
                           .toList(),
                     ))
               ],
