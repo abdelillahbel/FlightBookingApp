@@ -1,4 +1,5 @@
 import 'package:flightbookapp/screens/home/home_screen.dart';
+import 'package:flightbookapp/screens/search/search_screen.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
 // list is iterated using index
   final appScreens = [
     const HomeScreen(),
-    const Center(child: Text("Search")),
+    const SearchScreen(),
     const Center(child: Text("Tickets")),
     const Center(child: Text("Profile"))
   ];
