@@ -1,3 +1,4 @@
+import 'package:flightbookapp/core/widgets/styled_text_headline_four.dart';
 import 'package:flightbookapp/core/widgets/styled_text_headline_three.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +21,7 @@ class AppColumnTextLayout extends StatelessWidget {
         SizedBox(
           height: 5,
         ),
-        StyledTextHeadlineThree(text: bottomText, color: Colors.black)
+        StyledTextHeadlineFour(text: bottomText, color: Colors.black)
       ],
     );
   }
