@@ -1,5 +1,7 @@
 import 'package:flightbookapp/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/core/widgets/app_texts.dart';
 import 'package:flightbookapp/screens/search/widgets/app_text_icon.dart';
+import 'package:flightbookapp/screens/search/widgets/find_tickets.dart';
 import 'package:flightbookapp/screens/search/widgets/search_tabs.dart';
 import 'package:flutter/material.dart';
 
@@ -37,7 +39,19 @@ class SearchScreen extends StatelessWidget {
           AppTextIcon(
             icon: Icons.flight_land_rounded,
             text: "Arrival",
-          )
+          ),
+          SizedBox(
+            height: 24,
+          ),
+          FindTickets(),
+          SizedBox(
+            height: 40,
+          ),
+          AppTexts(
+            titleText: "Upcoming Flights",
+            descText: "View all",
+            func: () {},
+          ),
         ],
       ),
     );
