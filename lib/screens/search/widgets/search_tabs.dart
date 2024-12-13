@@ -6,7 +6,7 @@ class SearchTabs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    // final size = MediaQuery.of(context).size;
     return Container(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(46), color: Color(0xFFF4F6FD)),
