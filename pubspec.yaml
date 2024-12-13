@@ -41,6 +41,7 @@ dependencies:
   fluttertoast: ^8.2.8
   http: ^1.2.2
   dio: ^5.7.0
+  json_annotation: ^4.9.0
 
 dev_dependencies:
   flutter_test:
