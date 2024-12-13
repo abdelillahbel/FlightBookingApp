@@ -45,7 +45,7 @@ class HomeScreen extends StatelessWidget {
                           colors: [
                             Colors.redAccent,
                             Colors.red,
-                            Colors.blueGrey,
+                            Colors.red.shade800,
                           ],
                         )
                       ],
