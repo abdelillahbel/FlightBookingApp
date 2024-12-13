@@ -39,6 +39,8 @@ dependencies:
   barcode_widget: ^2.0.4
   gap: ^3.0.1
   fluttertoast: ^8.2.8
+  http: ^1.2.2
+  dio: ^5.7.0
 
 dev_dependencies:
   flutter_test:
