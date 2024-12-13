@@ -1,4 +1,5 @@
 import 'package:flightbookapp/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/screens/search/widgets/app_text_icon.dart';
 import 'package:flightbookapp/screens/search/widgets/search_tabs.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +23,21 @@ class SearchScreen extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          SearchTabs()
+          SearchTabs(),
+          SizedBox(
+            height: 24,
+          ),
+          AppTextIcon(
+            icon: Icons.flight_takeoff_rounded,
+            text: "Departure",
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          AppTextIcon(
+            icon: Icons.flight_land_rounded,
+            text: "Arrival",
+          )
         ],
       ),
     );

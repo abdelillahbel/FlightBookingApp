@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flightbookapp/core/res/media.dart';
 import 'package:flightbookapp/core/res/styles/app_styles.dart';
 import 'package:flightbookapp/core/widgets/app_texts.dart';
+import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -31,13 +32,21 @@ class HomeScreen extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Hey there", style: AppStyles.headLineStyle3),
+                        Text("Hey there",
+                            style: AppStyles.headLineStyle3
+                                .copyWith(color: Colors.grey)),
                         SizedBox(
                           height: 5,
                         ),
-                        Text(
-                          "Book Tickets",
-                          style: AppStyles.headLineStyle1,
+                        GradientText(
+                          'Book Tickets',
+                          style: TextStyle(
+                              fontSize: 26.0, fontWeight: FontWeight.bold),
+                          colors: [
+                            Colors.redAccent,
+                            Colors.red,
+                            Colors.blueGrey,
+                          ],
                         )
                       ],
                     ),
@@ -48,7 +57,7 @@ class HomeScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(0),
                             color: Colors.transparent,
                             image: DecorationImage(
-                              fit: BoxFit.fill,
+                                fit: BoxFit.fill,
                                 image: AssetImage(AppMedia.airalgeria))))
                   ],
                 ),
@@ -104,8 +113,7 @@ class HomeScreen extends StatelessWidget {
                     child: Row(
                       children: hotelsList
                           .take(2)
-                          .map((singleHotel) =>
-                              HotelCard(hotel: singleHotel))
+                          .map((singleHotel) => HotelCard(hotel: singleHotel))
                           .toList(),
                     ))
               ],
