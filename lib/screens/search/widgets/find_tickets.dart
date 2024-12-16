@@ -10,7 +10,7 @@ class FindTickets extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: 18, horizontal: 18),
       child: Center(
         child: Text(
-          "find tickets",
+          "Search",
           style: AppStyles.textStyle.copyWith(color: Colors.white),
         ),
       ),

@@ -1,8 +1,11 @@
 import 'package:flightbookapp/screens/search/widgets/search_tabs_widget.dart';
 import 'package:flutter/material.dart';
 
-class SearchTabs extends StatelessWidget {
-  const SearchTabs({super.key});
+class TicketsTabs extends StatelessWidget {
+  final String firstTab;
+  final String secondTab;
+
+  const TicketsTabs({super.key, required this.firstTab, required this.secondTab});
 
   @override
   Widget build(BuildContext context) {
@@ -13,11 +16,11 @@ class SearchTabs extends StatelessWidget {
       child: Row(
         children: [
           SearchTabsWidget(
-            tabText: "All Tickets ",
+            tabText: firstTab,
             tabBorder: false,
           ),
           SearchTabsWidget(
-            tabText: "Hotels",
+            tabText: secondTab,
             tabBorder: true,
             tabColor: Colors.transparent,
           ),
@@ -26,5 +29,3 @@ class SearchTabs extends StatelessWidget {
     );
   }
 }
-
-
