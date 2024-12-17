@@ -1,6 +1,6 @@
 import 'package:flightbookapp/screens/home/all_tickets_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flightbookapp/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/core/res/styles/app_theme.dart';
 
 class AppTexts extends StatelessWidget {
   final String titleText;
@@ -20,13 +20,13 @@ class AppTexts extends StatelessWidget {
       children: [
         Text(
           titleText,
-          style: AppStyles.headLineStyle2,
+          style: AppTheme.headLineStyle2,
         ),
         InkWell(
           onTap: func,
           child: Text(
             descText,
-            style: AppStyles.textStyle.copyWith(color: AppStyles.primaryColor),
+            style: AppTheme.textStyle.copyWith(color: AppTheme.primaryColor),
           ),
         )
       ],

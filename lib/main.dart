@@ -1,4 +1,4 @@
-import 'package:flightbookapp/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flightbookapp/screens/home/all_tickets_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flightbookapp/core/bottom_nav_bar.dart';
@@ -16,11 +16,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+       
         primaryColor: primary,
         useMaterial3: true,
-        textTheme: GoogleFonts.poppinsTextTheme(
+       /*  textTheme: GoogleFonts.poppinsTextTheme(
           Theme.of(context).textTheme,
-        ),
+        ), */
       ),
       debugShowCheckedModeBanner: false,
       routes: {

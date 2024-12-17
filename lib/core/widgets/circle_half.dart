@@ -1,4 +1,4 @@
-import 'package:flightbookapp/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class CircleHalf extends StatelessWidget {
@@ -13,7 +13,7 @@ class CircleHalf extends StatelessWidget {
       width: 10,
       child: DecoratedBox(
           decoration: BoxDecoration(
-              color: AppStyles.bgColor,
+              color: AppTheme.bgColor,
               borderRadius: isRight == true
                   ? BorderRadius.only(
                       topLeft: Radius.circular(10),

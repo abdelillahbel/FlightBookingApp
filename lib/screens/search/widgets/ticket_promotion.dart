@@ -1,5 +1,5 @@
 import 'package:flightbookapp/core/res/media.dart';
-import 'package:flightbookapp/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -38,7 +38,7 @@ class TicketPromotion extends StatelessWidget {
               ),
               Text(
                 "20% discount on early booking of this flight.\nDont miss!",
-                style: AppStyles.headLineStyle2,
+                style: AppTheme.headLineStyle2,
               )
             ],
           ),
@@ -58,7 +58,7 @@ class TicketPromotion extends StatelessWidget {
                     children: [
                       Text(
                         "Discount\nfor survey",
-                        style: AppStyles.headLineStyle2.copyWith(
+                        style: AppTheme.headLineStyle2.copyWith(
                             fontWeight: FontWeight.bold, color: Colors.white),
                       ),
                       SizedBox(
@@ -66,7 +66,7 @@ class TicketPromotion extends StatelessWidget {
                       ),
                       Text(
                         "Take the survey about our services and get discount.",
-                        style: AppStyles.headLineStyle2.copyWith(
+                        style: AppTheme.headLineStyle2.copyWith(
                             fontWeight: FontWeight.w500,
                             color: Colors.white,
                             fontSize: 18),
@@ -101,7 +101,7 @@ class TicketPromotion extends StatelessWidget {
                   Text(
                     "Take love",
                     style:
-                        AppStyles.headLineStyle2.copyWith(color: Colors.white),
+                        AppTheme.headLineStyle2.copyWith(color: Colors.white),
                   ),
                   SizedBox(
                     height: 10,

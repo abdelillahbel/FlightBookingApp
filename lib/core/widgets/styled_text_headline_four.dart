@@ -1,4 +1,4 @@
-import 'package:flightbookapp/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class StyledTextHeadlineFour extends StatelessWidget {
@@ -16,7 +16,7 @@ class StyledTextHeadlineFour extends StatelessWidget {
     return Text(
       text,
       textAlign: textAlign,
-      style: AppStyles.headLineStyle4.copyWith(color: color),
+      style: AppTheme.headLineStyle4.copyWith(color: color),
     );
   }
 }

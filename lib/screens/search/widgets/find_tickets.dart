@@ -1,4 +1,4 @@
-import 'package:flightbookapp/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class FindTickets extends StatelessWidget {
@@ -11,7 +11,7 @@ class FindTickets extends StatelessWidget {
       child: Center(
         child: Text(
           "Search",
-          style: AppStyles.textStyle.copyWith(color: Colors.white),
+          style: AppTheme.textStyle.copyWith(color: Colors.white),
         ),
       ),
       decoration: BoxDecoration(

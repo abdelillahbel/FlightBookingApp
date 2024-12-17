@@ -1,4 +1,4 @@
-import 'package:flightbookapp/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flightbookapp/core/widgets/app_column_text_layout.dart';
 import 'package:flightbookapp/core/widgets/app_layout_builder.dart';
 import 'package:flightbookapp/core/widgets/circle_half.dart';
@@ -28,7 +28,7 @@ class TicketView extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(15),
               decoration: BoxDecoration(
-                  color: AppStyles.ticketTopColor,
+                  color: AppTheme.ticketTopColor,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(19),
                       topRight: Radius.circular(19))),
@@ -98,7 +98,7 @@ class TicketView extends StatelessWidget {
             ),
             // Ticket middle section
             Container(
-              color: AppStyles.ticketBottomColor,
+              color: AppTheme.ticketBottomColor,
               child: Row(
                 children: [
                   CircleHalf(
@@ -120,7 +120,7 @@ class TicketView extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(15),
               decoration: BoxDecoration(
-                  color: AppStyles.ticketBottomColor,
+                  color: AppTheme.ticketBottomColor,
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(19),
                       bottomRight: Radius.circular(19))),

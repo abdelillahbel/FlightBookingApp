@@ -1,5 +1,5 @@
 import 'package:flightbookapp/core/res/media.dart';
-import 'package:flightbookapp/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class HotelCard extends StatelessWidget {
@@ -35,7 +35,7 @@ class HotelCard extends StatelessWidget {
             padding: const EdgeInsets.only(left: 15),
             child: Text(
               hotel['place'],
-              style: AppStyles.headLineStyle1.copyWith(color: Colors.black45),
+              style: AppTheme.headLineStyle1.copyWith(color: Colors.black45),
             ),
           ),
           SizedBox(
@@ -45,7 +45,7 @@ class HotelCard extends StatelessWidget {
             padding: const EdgeInsets.only(left: 15),
             child: Text(
               hotel['destination'],
-              style: AppStyles.headLineStyle2.copyWith(color: Colors.black45),
+              style: AppTheme.headLineStyle2.copyWith(color: Colors.black45),
             ),
           ),
           SizedBox(
@@ -55,7 +55,7 @@ class HotelCard extends StatelessWidget {
             padding: const EdgeInsets.only(left: 15),
             child: Text(
               "\$${hotel['price']}/night",
-              style: AppStyles.headLineStyle1.copyWith(color: Colors.black45),
+              style: AppTheme.headLineStyle1.copyWith(color: Colors.black45),
             ),
           )
         ],

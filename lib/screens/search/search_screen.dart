@@ -1,5 +1,5 @@
 import 'package:flightbookapp/core/res/media.dart';
-import 'package:flightbookapp/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flightbookapp/core/widgets/app_texts.dart';
 import 'package:flightbookapp/screens/search/widgets/app_text_icon.dart';
 import 'package:flightbookapp/screens/search/widgets/find_tickets.dart';
@@ -13,7 +13,7 @@ class SearchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppStyles.bgColor,
+      backgroundColor: AppTheme.bgColor,
       body: ListView(
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         children: [
@@ -22,7 +22,7 @@ class SearchScreen extends StatelessWidget {
           ),
           Text(
             "What are\nyou looking for?",
-            style: AppStyles.headLineStyle1.copyWith(fontSize: 32),
+            style: AppTheme.headLineStyle1.copyWith(fontSize: 32),
           ),
           SizedBox(
             height: 20,

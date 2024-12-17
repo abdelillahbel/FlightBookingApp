@@ -5,8 +5,9 @@ import 'package:flightbookapp/screens/home/widgets/hotel_card.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flightbookapp/core/res/media.dart';
-import 'package:flightbookapp/core/res/styles/app_styles.dart';
+import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flightbookapp/core/widgets/app_texts.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -15,7 +16,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppStyles.bgColor,
+      backgroundColor: AppTheme.bgColor,
       body: ListView(
         children: [
           SizedBox(
@@ -33,15 +34,14 @@ class HomeScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Hey there",
-                            style: AppStyles.headLineStyle3
+                            style: AppTheme.headLineStyle3
                                 .copyWith(color: Colors.grey)),
                         SizedBox(
                           height: 5,
                         ),
                         GradientText(
                           'Book Tickets',
-                          style: TextStyle(
-                              fontSize: 26.0, fontWeight: FontWeight.bold),
+                          style: AppTheme.headLineStyle1,
                           colors: [
                             const Color.fromARGB(255, 215, 7, 7),
                             Colors.red,
