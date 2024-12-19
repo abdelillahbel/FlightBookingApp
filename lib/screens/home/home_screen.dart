@@ -18,12 +18,12 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppTheme.bgColor,
       body: ListView(
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         children: [
           SizedBox(
-            height: 40,
+            height: 20,
           ),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
                             style: AppTheme.headLineStyle3
                                 .copyWith(color: Colors.grey)),
                         SizedBox(
-                          height: 5,
+                          height: 0,
                         ),
                         GradientText(
                           'Book Tickets',

@@ -13,7 +13,7 @@ class TicketScreen extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         children: [
           SizedBox(
-            height: 40,
+            height: 20,
           ),
           Text(
             "Tickets",
