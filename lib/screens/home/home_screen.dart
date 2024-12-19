@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppTheme.bgColor,
       body: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
         children: [
           SizedBox(
             height: 20,
@@ -86,7 +86,8 @@ class HomeScreen extends StatelessWidget {
                 AppTexts(
                   titleText: "Upcoming Flights",
                   descText: "View all",
-                  func: () => Navigator.pushNamed(context, "all_tickets"),
+                  func: () =>
+                      Navigator.pushNamed(context, "all_tickets_screen"),
                 ),
                 SizedBox(
                   height: 20,
@@ -96,8 +97,10 @@ class HomeScreen extends StatelessWidget {
                     child: Row(
                       children: ticketList
                           .take(2)
-                          .map((singleTicket) =>
-                              TicketView(ticket: singleTicket))
+                          .map((singleTicket) => TicketView(
+                                ticket: singleTicket,
+                                isDefault: false,
+                              ))
                           .toList(),
                     )),
                 SizedBox(
