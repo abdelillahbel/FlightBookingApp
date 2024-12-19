@@ -15,7 +15,7 @@ class SearchScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppTheme.bgColor,
       body: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
         children: [
           SizedBox(
             height: 20,
