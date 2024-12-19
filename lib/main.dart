@@ -16,11 +16,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'FlightBook',
       theme: ThemeData(
+        // fontFamily: GoogleFonts.poppins().fontFamily,
         primaryColor: primary,
         useMaterial3: true,
-        /* textTheme: GoogleFonts.poppinsTextTheme(
-          Theme.of(context).textTheme,
-        ), */
+        // textTheme: GoogleFonts.poppinsTextTheme(
+        //   Theme.of(context).textTheme,
+        // ),
       ),
       debugShowCheckedModeBanner: false,
       routes: {

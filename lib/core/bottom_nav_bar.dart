@@ -1,3 +1,5 @@
+import 'package:flightbookapp/core/res/styles/app_theme.dart';
+import 'package:flightbookapp/core/utils/constants.dart';
 import 'package:flightbookapp/screens/home/home_screen.dart';
 import 'package:flightbookapp/screens/search/search_screen.dart';
 import 'package:flightbookapp/screens/ticket/ticket_screen.dart';
@@ -17,7 +19,11 @@ class _BottomNavBarState extends State<BottomNavBar> {
     const HomeScreen(),
     const SearchScreen(),
     const TicketScreen(),
-    const Center(child: Text("Profile"))
+    Center(
+        child: Text(
+      "Profile hello this is new and yeah then later ${Constants.defaultCurrency}",
+      style: AppTheme.headLineStyle2,
+    ))
   ];
 
   // change screens index for BottomNavBar
