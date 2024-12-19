@@ -24,6 +24,22 @@ List<Map<String, dynamic>> ticketList = [
     },
     'flying_time': '4H 20M',
     'date': "10 MAY",
+    'departure_time': "09:00 AM",
+    "number": 45
+  },
+  {
+    'from': {'code': "RTD", 'name': "Algers"},
+    'to': {'code': "SDF", 'name': "Shanghai"},
+    'flying_time': '4H 20M',
+    'date': "10 MAY",
+    'departure_time': "09:00 AM",
+    "number": 45
+  },
+  {
+    'from': {'code': "SRF", 'name': "Algers"},
+    'to': {'code': "VFG", 'name': "Shanghai"},
+    'flying_time': '4H 20M',
+    'date': "10 MAY",
     'departure_time':"09:00 AM",
     "number":45
   },
