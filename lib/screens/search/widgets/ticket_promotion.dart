@@ -15,7 +15,7 @@ class TicketPromotion extends StatelessWidget {
       children: [
         Container(
           padding: EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-          width: size.width * .42,
+          width: size.width * .45,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: Colors.white,
@@ -49,7 +49,7 @@ class TicketPromotion extends StatelessWidget {
               children: [
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-                  width: size.width * .44,
+                  width: size.width * .45,
                   decoration: BoxDecoration(
                       color: Colors.deepOrange.shade800,
                       borderRadius: BorderRadius.circular(18)),
@@ -88,7 +88,7 @@ class TicketPromotion extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 15,
+              height: 10,
             ),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
