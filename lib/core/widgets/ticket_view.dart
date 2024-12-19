@@ -11,7 +11,19 @@ import 'package:flutter/material.dart';
 class TicketView extends StatelessWidget {
   final Map<String, dynamic> ticket;
   final bool wholeScreen;
-  const TicketView({super.key, required this.ticket, this.wholeScreen = false});
+  final bool isDefault;
+  final Color primaryColor;
+  final Color secondaryColor;
+  final Color designColor;
+
+  const TicketView(
+      {super.key,
+      required this.ticket,
+      this.wholeScreen = false,
+      this.isDefault = true,
+      this.primaryColor = Colors.white,
+      this.designColor = Colors.white,
+      this.secondaryColor = Colors.white});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +40,9 @@ class TicketView extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(15),
               decoration: BoxDecoration(
-                  color: AppTheme.ticketTopColor,
+                  color: isDefault == true
+                      ? Colors.white
+                      : AppTheme.ticketTopColor,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(19),
                       topRight: Radius.circular(19))),
@@ -39,9 +53,12 @@ class TicketView extends StatelessWidget {
                     children: [
                       StyledTextHeadlineThree(
                         text: ticket["from"]["code"],
+                        color: primaryColor,
                       ),
                       Expanded(child: Container()),
-                      FlightCircle(),
+                      FlightCircle(
+                        color: designColor,
+                      ),
                       Expanded(
                           child: Stack(
                         children: [
@@ -49,7 +66,7 @@ class TicketView extends StatelessWidget {
                             height: 24,
                             child: AppLayoutBuilder(
                               randomDivider: 6,
-                              color: Colors.white,
+                              color: designColor,
                             ),
                           ),
                           Center(
@@ -57,16 +74,19 @@ class TicketView extends StatelessWidget {
                               angle: -4.8,
                               child: Icon(
                                 Icons.local_airport_rounded,
-                                color: Colors.white,
+                                color: designColor,
                               ),
                             ),
                           )
                         ],
                       )),
-                      FlightCircle(),
+                      FlightCircle(
+                        color: designColor,
+                      ),
                       Expanded(child: Container()),
                       StyledTextHeadlineThree(
                         text: ticket["to"]["code"],
+                        color: primaryColor,
                       )
                     ],
                   ),
@@ -80,14 +100,20 @@ class TicketView extends StatelessWidget {
                       SizedBox(
                           width: 100,
                           child: StyledTextHeadlineFour(
-                              text: ticket["from"]["name"])),
+                            text: ticket["from"]["name"],
+                            color: secondaryColor,
+                          )),
                       Expanded(child: Container()),
-                      StyledTextHeadlineFour(text: ticket["flying_time"]),
+                      StyledTextHeadlineFour(
+                        text: ticket["flying_time"],
+                        color: secondaryColor,
+                      ),
                       Expanded(child: Container()),
                       SizedBox(
                         width: 100,
                         child: StyledTextHeadlineFour(
                           text: ticket["to"]["name"],
+                          color: secondaryColor,
                           textAlign: TextAlign.end,
                         ),
                       )

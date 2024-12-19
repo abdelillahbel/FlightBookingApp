@@ -1,4 +1,6 @@
+import 'package:flightbookapp/core/data/tickets_data.dart';
 import 'package:flightbookapp/core/res/styles/app_theme.dart';
+import 'package:flightbookapp/core/widgets/ticket_view.dart';
 import 'package:flightbookapp/screens/search/widgets/tickets_tabs.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +12,7 @@ class TicketScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppTheme.bgColor,
       body: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
         children: [
           SizedBox(
             height: 20,
@@ -25,6 +27,16 @@ class TicketScreen extends StatelessWidget {
           TicketsTabs(
             firstTab: "Upcoming",
             secondTab: "Previous",
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          TicketView(
+            ticket: ticketList[0],
+            wholeScreen: true,
+            primaryColor: Colors.black,
+            secondaryColor: Colors.grey.shade500,
+            designColor: Colors.lightBlue.shade300,
           )
         ],
       ),
