@@ -81,7 +81,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 40,
+                  height: 30,
                 ),
                 AppTexts(
                   titleText: "Upcoming Flights",
@@ -90,7 +90,7 @@ class HomeScreen extends StatelessWidget {
                       Navigator.pushNamed(context, "all_tickets_screen"),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
@@ -104,12 +104,15 @@ class HomeScreen extends StatelessWidget {
                           .toList(),
                     )),
                 SizedBox(
-                  height: 40,
+                  height: 20,
                 ),
                 AppTexts(
                   titleText: "Hotels",
                   descText: "View all",
                   func: () {},
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
