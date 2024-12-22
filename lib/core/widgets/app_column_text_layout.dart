@@ -1,6 +1,7 @@
 import 'package:flightbookapp/core/widgets/styled_text_headline_four.dart';
 import 'package:flightbookapp/core/widgets/styled_text_headline_three.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppColumnTextLayout extends StatelessWidget {
   final String topText;
@@ -8,6 +9,7 @@ class AppColumnTextLayout extends StatelessWidget {
   final CrossAxisAlignment crossAxisAlignment;
   final Color color;
   final bool? styleTwo;
+  
   const AppColumnTextLayout(
       {super.key,
       required this.topText,
