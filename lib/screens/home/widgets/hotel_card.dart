@@ -54,7 +54,7 @@ class HotelCard extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 15),
             child: Text(
-              "\$${hotel['price']}/night",
+              "€${hotel['price']}/night",
               style: AppTheme.headLineStyle1.copyWith(color: Colors.black45),
             ),
           )
