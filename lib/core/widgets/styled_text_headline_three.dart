@@ -11,7 +11,8 @@ class StyledTextHeadlineThree extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: AppTheme.headLineStyle3.copyWith(color: color),
+      style: AppTheme.headLineStyle3
+          .copyWith(color: color, fontWeight: FontWeight.w700),
     );
   }
 }

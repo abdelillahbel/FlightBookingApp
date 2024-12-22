@@ -35,8 +35,10 @@ class TicketScreen extends StatelessWidget {
             ticket: ticketList[0],
             wholeScreen: true,
             primaryColor: Colors.black,
-            secondaryColor: Colors.grey.shade500,
-            designColor: Colors.lightBlue.shade300,
+            secondaryColor: Colors.grey.shade700,
+            designColor: Colors.lightBlue.shade200,
+            circleColor: Colors.white,
+            styleTwo: true,
           )
         ],
       ),

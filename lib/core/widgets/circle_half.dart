@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 
 class CircleHalf extends StatelessWidget {
   final bool isRight;
+  final Color color;
 
-  const CircleHalf({super.key, required this.isRight});
+  const CircleHalf(
+      {super.key, required this.isRight, this.color = AppTheme.bgColor});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +15,7 @@ class CircleHalf extends StatelessWidget {
       width: 10,
       child: DecoratedBox(
           decoration: BoxDecoration(
-              color: AppTheme.bgColor,
+              color: color,
               borderRadius: isRight == true
                   ? BorderRadius.only(
                       topLeft: Radius.circular(10),

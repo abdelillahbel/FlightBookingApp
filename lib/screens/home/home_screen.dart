@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: ticketList
-                          .take(2)
+                          //.take(2)
                           .map((singleTicket) => TicketView(
                                 ticket: singleTicket,
                                 isDefault: false,
@@ -115,7 +115,7 @@ class HomeScreen extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: hotelsList
-                          .take(2)
+                          //.take(2)
                           .map((singleHotel) => HotelCard(hotel: singleHotel))
                           .toList(),
                     ))

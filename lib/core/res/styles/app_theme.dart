@@ -5,7 +5,7 @@ Color primary = const Color(0xFF6887AF);
 
 class AppTheme {
   static Color primaryColor = primary;
-  static Color bgColor = const Color(0xFFEEEDF2);
+  static const Color bgColor = const Color(0xFFEEEDF2);
   static Color textColor = const Color(0xFF3B3B3B);
 
   // ticket color

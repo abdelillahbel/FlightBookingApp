@@ -15,6 +15,8 @@ class TicketView extends StatelessWidget {
   final Color primaryColor;
   final Color secondaryColor;
   final Color designColor;
+  final Color circleColor;
+  final bool? styleTwo;
 
   const TicketView(
       {super.key,
@@ -23,7 +25,9 @@ class TicketView extends StatelessWidget {
       this.isDefault = true,
       this.primaryColor = Colors.white,
       this.designColor = Colors.white,
-      this.secondaryColor = Colors.white});
+      this.secondaryColor = Colors.white,
+      this.circleColor = AppTheme.bgColor,
+      this.styleTwo});
 
   @override
   Widget build(BuildContext context) {
@@ -127,9 +131,7 @@ class TicketView extends StatelessWidget {
               color: AppTheme.ticketBottomColor,
               child: Row(
                 children: [
-                  CircleHalf(
-                    isRight: false,
-                  ),
+                  CircleHalf(isRight: false, color: circleColor),
                   Expanded(
                       child: AppLayoutBuilder(
                     randomDivider: 12,
@@ -138,6 +140,7 @@ class TicketView extends StatelessWidget {
                   )),
                   CircleHalf(
                     isRight: true,
+                    color: circleColor,
                   ),
                 ],
               ),
@@ -148,8 +151,12 @@ class TicketView extends StatelessWidget {
               decoration: BoxDecoration(
                   color: AppTheme.ticketBottomColor,
                   borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(19),
-                      bottomRight: Radius.circular(19))),
+                      bottomLeft: styleTwo == true
+                          ? Radius.circular(0)
+                          : Radius.circular(19),
+                      bottomRight: styleTwo == true
+                          ? Radius.circular(0)
+                          : Radius.circular(19))),
               child: Column(
                 children: [
                   // destinations with codes
@@ -160,16 +167,23 @@ class TicketView extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         topText: ticket["date"],
                         bottomText: "Date",
+                        color: secondaryColor,
+                         styleTwo: styleTwo,
                       ),
                       AppColumnTextLayout(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         topText: ticket["departure_time"],
                         bottomText: "Departure time",
+                        color: secondaryColor,
+                         styleTwo: styleTwo,
                       ),
                       AppColumnTextLayout(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         topText: ticket["number"].toString(),
                         bottomText: "Number",
+                        color: secondaryColor,
+                        styleTwo: styleTwo,
+                       
                       ),
                     ],
                   ),

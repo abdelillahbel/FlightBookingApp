@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => BottomNavBar(),
-        "all_tickets": (context) => AllTicketsScreen()
+        "all_tickets_screen": (context) => AllTicketsScreen()
       },
     );
   }
