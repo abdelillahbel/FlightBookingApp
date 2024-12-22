@@ -19,11 +19,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     const HomeScreen(),
     const SearchScreen(),
     const TicketScreen(),
-    Center(
-        child: Text(
-      "Profile hello this is new and yeah then later ${Constants.defaultCurrency}",
-      style: AppTheme.headLineStyle2,
-    ))
+    const Text("Profile")
   ];
 
   // change screens index for BottomNavBar
