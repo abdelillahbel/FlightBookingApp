@@ -58,7 +58,7 @@ class TicketView extends StatelessWidget {
                         text: ticket["from"]["code"],
                         color: primaryColor,
                       ),
-                      Expanded(child: Container()),
+                      Spacer(),
                       FlightCircle(
                         color: designColor,
                       ),
