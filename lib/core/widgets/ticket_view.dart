@@ -31,10 +31,8 @@ class TicketView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // final windowSize = MediaQuery.of(context).size;
 
     return SizedBox(
-      //width: windowSize.width * 0.85,
       width: 360,
       child: Container(
         margin: EdgeInsets.only(right: wholeScreen == true ? 0 : 15),

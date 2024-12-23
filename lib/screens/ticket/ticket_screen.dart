@@ -15,7 +15,6 @@ class TicketScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //final windowSize = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: AppTheme.bgColor,
       body: ListView(
@@ -55,7 +54,6 @@ class TicketScreen extends StatelessWidget {
                   height: 1,
                 ),
                 Container(
-                  //width: windowSize.width * 0.85,
                   width: 360,
                   padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
                   color: Colors.white,
@@ -163,7 +161,6 @@ class TicketScreen extends StatelessWidget {
                 ),
                 // barcode section
                 Container(
-                  //width: windowSize.width * 0.85,
                   width: 360,
                   padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
                   decoration: BoxDecoration(
