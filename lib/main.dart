@@ -1,33 +1,22 @@
-import 'package:flightbookapp/core/res/styles/app_theme.dart';
-import 'package:flightbookapp/screens/home/all_tickets_screen.dart';
+import 'package:flightbookapp/core/config/themes/app_theme.dart';
+import 'package:flightbookapp/core/routes/route_configuration.dart';
+import 'package:flightbookapp/service_locator.dart';
 import 'package:flutter/material.dart';
-import 'package:flightbookapp/core/bottom_nav_bar.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-void main() {
-  runApp(const MyApp());
+Future<void> main() async {
+  await initializeDependencies();
+  runApp(const FlightBookingApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class FlightBookingApp extends StatelessWidget {
+  const FlightBookingApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'FlightBook',
-      theme: ThemeData(
-        // fontFamily: GoogleFonts.poppins().fontFamily,
-        primaryColor: primary,
-        useMaterial3: true,
-        // textTheme: GoogleFonts.poppinsTextTheme(
-        //   Theme.of(context).textTheme,
-        // ),
-      ),
+    return MaterialApp.router(
+      theme: AppTheme.lightTheme,
+      routerConfig: RouteConfiguration.router,
       debugShowCheckedModeBanner: false,
-      routes: {
-        "/": (context) => BottomNavBar(),
-        "all_tickets_screen": (context) => AllTicketsScreen()
-      },
     );
   }
 }
