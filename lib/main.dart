@@ -1,5 +1,7 @@
 import 'package:flightbookapp/core/res/styles/app_theme.dart';
+import 'package:flightbookapp/core/utils/app_routes.dart';
 import 'package:flightbookapp/screens/home/all_tickets_screen.dart';
+import 'package:flightbookapp/screens/ticket/ticket_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flightbookapp/core/bottom_nav_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -25,8 +27,9 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context) => BottomNavBar(),
-        "all_tickets_screen": (context) => AllTicketsScreen()
+        AppRoutes.homeScreen: (context) => const BottomNavBar(),
+        AppRoutes.allTicketsScreen: (context) => const AllTicketsScreen(),
+        AppRoutes.ticketScreen: (context) => const TicketScreen()
       },
     );
   }
