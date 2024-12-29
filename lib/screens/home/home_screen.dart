@@ -1,5 +1,6 @@
 import 'package:flightbookapp/core/data/hotels_list.dart';
 import 'package:flightbookapp/core/data/tickets_data.dart';
+import 'package:flightbookapp/core/utils/app_routes.dart';
 import 'package:flightbookapp/core/widgets/ticket_view.dart';
 import 'package:flightbookapp/screens/home/widgets/hotel_card.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
@@ -87,7 +88,7 @@ class HomeScreen extends StatelessWidget {
                   titleText: "Upcoming Flights",
                   descText: "View all",
                   func: () =>
-                      Navigator.pushNamed(context, "all_tickets_screen"),
+                      Navigator.pushNamed(context, AppRoutes.allTicketsScreen),
                 ),
                 SizedBox(
                   height: 10,
