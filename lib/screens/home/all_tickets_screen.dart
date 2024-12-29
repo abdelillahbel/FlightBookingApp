@@ -1,5 +1,6 @@
 import 'package:flightbookapp/core/data/tickets_data.dart';
 import 'package:flightbookapp/core/res/styles/app_theme.dart';
+import 'package:flightbookapp/core/utils/app_routes.dart';
 import 'package:flightbookapp/core/widgets/ticket_view.dart';
 import 'package:flutter/material.dart';
 
@@ -19,13 +20,21 @@ class AllTicketsScreen extends StatelessWidget {
           SingleChildScrollView(
             child: Column(
               children: ticketList
-                  .map((singleTicket) => Container(
-                      margin: EdgeInsets.only(bottom: 16),
-                      child: TicketView(
-                        wholeScreen: true,
-                        ticket: singleTicket,
-                        isDefault: false,
-                      )))
+                  .map((singleTicket) => GestureDetector(
+                        onTap: () {
+                          var index = ticketList.indexOf(singleTicket);
+                          Navigator.popAndPushNamed(
+                              context, AppRoutes.ticketScreen,
+                              arguments: {"index": index});
+                        },
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 16),
+                            child: TicketView(
+                              wholeScreen: true,
+                              ticket: singleTicket,
+                              isDefault: false,
+                            )),
+                      ))
                   .toList(),
             ),
           )
