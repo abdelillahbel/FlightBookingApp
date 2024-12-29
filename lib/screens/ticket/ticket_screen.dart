@@ -10,8 +10,22 @@ import 'package:flightbookapp/screens/search/widgets/tickets_tabs.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class TicketScreen extends StatelessWidget {
+class TicketScreen extends StatefulWidget {
   const TicketScreen({super.key});
+
+  @override
+  State<TicketScreen> createState() => _TicketScreenState();
+}
+
+class _TicketScreenState extends State<TicketScreen> {
+  late int ticketIndex = 0;
+
+  @override
+  void didChangeDependencies() {
+    var args = ModalRoute.of(context)!.settings.arguments as Map;
+    ticketIndex = args["index"];
+    super.didChangeDependencies();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +58,7 @@ class TicketScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     TicketView(
-                      ticket: ticketList[0],
+                      ticket: ticketList[ticketIndex],
                       wholeScreen: true,
                       primaryColor: Colors.black,
                       secondaryColor: Colors.grey.shade700,
@@ -195,7 +209,7 @@ class TicketScreen extends StatelessWidget {
                   horizontal: 15,
                 ),
                 child: TicketView(
-                  ticket: ticketList[0],
+                  ticket: ticketList[ticketIndex],
                   wholeScreen: true,
                   isDefault: false,
                 ),
