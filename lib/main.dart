@@ -1,5 +1,6 @@
 import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flightbookapp/core/utils/app_routes.dart';
+import 'package:flightbookapp/screens/home/all_hotels_screen.dart';
 import 'package:flightbookapp/screens/home/all_tickets_screen.dart';
 import 'package:flightbookapp/screens/ticket/ticket_screen.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +30,8 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.homeScreen: (context) => const BottomNavBar(),
         AppRoutes.allTicketsScreen: (context) => const AllTicketsScreen(),
-        AppRoutes.ticketScreen: (context) => const TicketScreen()
+        AppRoutes.ticketScreen: (context) => const TicketScreen(),
+        AppRoutes.allHotelsScreen: (context) => const AllHotelsScreen()
       },
     );
   }
