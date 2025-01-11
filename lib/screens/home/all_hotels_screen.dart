@@ -12,7 +12,19 @@ class AllHotelsScreen extends StatelessWidget {
         title: Text("All Hotels"),
         backgroundColor: AppTheme.bgColor,
       ),
-      body: ListView(),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: GridView.builder(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 16.0,
+                mainAxisSpacing: 16.0,
+                childAspectRatio: 0.7),
+            itemBuilder: (context, index) {
+              return Container(child: Text("Grid"),
+              color: Colors.white,);
+            }),
+      ),
     );
   }
 }

@@ -1,4 +1,4 @@
-import 'package:flightbookapp/core/res/media.dart';
+import 'package:flightbookapp/core/res/app_media.dart';
 import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flutter/material.dart';
 

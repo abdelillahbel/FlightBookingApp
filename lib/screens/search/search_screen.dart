@@ -1,4 +1,4 @@
-import 'package:flightbookapp/core/res/media.dart';
+import 'package:flightbookapp/core/res/app_media.dart';
 import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flightbookapp/core/widgets/app_texts.dart';
 import 'package:flightbookapp/screens/search/widgets/app_text_icon.dart';

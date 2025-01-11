@@ -1,6 +1,6 @@
 import 'package:barcode_widget/barcode_widget.dart';
 import 'package:flightbookapp/core/data/tickets_data.dart';
-import 'package:flightbookapp/core/res/media.dart';
+import 'package:flightbookapp/core/res/app_media.dart';
 import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flightbookapp/core/widgets/app_column_text_layout.dart';
 import 'package:flightbookapp/core/widgets/app_layout_builder.dart';
