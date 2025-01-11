@@ -34,9 +34,23 @@ class HomeScreen extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Hey there",
-                            style: AppTheme.headLineStyle3
-                                .copyWith(color: Colors.grey)),
+                        Row(
+                          children: [
+                            Text("Hey there",
+                                style: AppTheme.headLineStyle3
+                                    .copyWith(color: Colors.grey)),
+                            Card(
+                              color: Colors.white,
+                              child: Container(
+                                  padding: EdgeInsets.all(6),
+                                  child: Text(
+                                    "unofficial",
+                                    style: AppTheme.headLineStyle1.copyWith(
+                                        fontSize: 8, color: Colors.black),
+                                  )),
+                            )
+                          ],
+                        ),
                         SizedBox(
                           height: 0,
                         ),
