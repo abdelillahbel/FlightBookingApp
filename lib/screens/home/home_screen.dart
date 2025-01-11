@@ -5,9 +5,10 @@ import 'package:flightbookapp/core/widgets/ticket_view.dart';
 import 'package:flightbookapp/screens/home/widgets/hotel_card.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:flightbookapp/core/res/media.dart';
+import 'package:flightbookapp/core/res/app_media.dart';
 import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:flightbookapp/core/widgets/app_texts.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 
@@ -42,12 +43,17 @@ class HomeScreen extends StatelessWidget {
                             Card(
                               color: Colors.white,
                               child: Container(
-                                  padding: EdgeInsets.all(6),
-                                  child: Text(
-                                    "unofficial",
-                                    style: AppTheme.headLineStyle1.copyWith(
-                                        fontSize: 8, color: Colors.black),
-                                  )),
+                                padding: EdgeInsets.all(6),
+                                child: GradientText(
+                                  'New',
+                                  style: AppTheme.headLineStyle1
+                                      .copyWith(fontSize: 8),
+                                  colors: [
+                                    const Color.fromARGB(255, 215, 7, 7),
+                                    Colors.red,
+                                  ],
+                                ),
+                              ),
                             )
                           ],
                         ),
@@ -66,14 +72,14 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                     Container(
-                        width: 70,
-                        height: 60,
+                        width: 120,
+                        height: 70,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(0),
                             color: Colors.transparent,
                             image: DecorationImage(
                                 fit: BoxFit.fill,
-                                image: AssetImage(AppMedia.airalgeria))))
+                                image: AssetImage(AppMedia.redWhiteMap))))
                   ],
                 ),
                 SizedBox(
