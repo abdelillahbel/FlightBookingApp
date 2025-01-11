@@ -110,7 +110,9 @@ class HomeScreen extends StatelessWidget {
                 AppTexts(
                   titleText: "Hotels",
                   descText: "View all",
-                  func: () {},
+                  func: () {
+                    Navigator.pushNamed(context, AppRoutes.allHotelsScreen);
+                  },
                 ),
                 SizedBox(
                   height: 10,
