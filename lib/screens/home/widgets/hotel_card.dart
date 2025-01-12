@@ -13,14 +13,14 @@ class HotelCard extends StatelessWidget {
       padding: EdgeInsets.all(8),
       margin: EdgeInsets.only(right: 14),
       width: size.width * 0.6,
-      height: 350,
+      // height: 350,
       decoration: BoxDecoration(
           color: Colors.grey.shade300, borderRadius: BorderRadius.circular(22)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: 180,
+            // height: 180,
             decoration: BoxDecoration(
                 color: Colors.grey.shade300,
                 borderRadius: BorderRadius.circular(16),

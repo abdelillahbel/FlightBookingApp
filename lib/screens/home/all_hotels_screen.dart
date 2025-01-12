@@ -1,4 +1,6 @@
+import 'package:flightbookapp/core/data/hotels_list.dart';
 import 'package:flightbookapp/core/res/styles/app_theme.dart';
+import 'package:flightbookapp/screens/home/widgets/hotel_card.dart';
 import 'package:flutter/material.dart';
 
 class AllHotelsScreen extends StatelessWidget {
@@ -20,9 +22,12 @@ class AllHotelsScreen extends StatelessWidget {
                 crossAxisSpacing: 16.0,
                 mainAxisSpacing: 16.0,
                 childAspectRatio: 0.7),
+            itemCount: hotelsList.length,
             itemBuilder: (context, index) {
-              return Container(child: Text("Grid"),
-              color: Colors.white,);
+              var singleHotel = hotelsList[index];
+              return HotelCard(
+                hotel: singleHotel,
+              );
             }),
       ),
     );
