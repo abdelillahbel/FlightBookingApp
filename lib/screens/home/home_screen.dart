@@ -35,28 +35,9 @@ class HomeScreen extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Row(
-                          children: [
-                            Text("Hey there",
-                                style: AppTheme.headLineStyle3
-                                    .copyWith(color: Colors.grey)),
-                            Card(
-                              color: Colors.white,
-                              child: Container(
-                                padding: EdgeInsets.all(6),
-                                child: GradientText(
-                                  'New',
-                                  style: AppTheme.headLineStyle1
-                                      .copyWith(fontSize: 8),
-                                  colors: [
-                                    const Color.fromARGB(255, 215, 7, 7),
-                                    Colors.red,
-                                  ],
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
+                        Text("Hey there",
+                            style: AppTheme.headLineStyle3
+                                .copyWith(color: Colors.grey)),
                         SizedBox(
                           height: 0,
                         ),
@@ -105,6 +86,7 @@ class HomeScreen extends StatelessWidget {
                   height: 30,
                 ),
                 AppTexts(
+                  newFeature: true,
                   titleText: "Upcoming Flights",
                   descText: "View all",
                   func: () =>
