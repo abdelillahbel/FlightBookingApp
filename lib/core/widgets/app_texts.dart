@@ -1,4 +1,3 @@
-import 'package:flightbookapp/screens/home/all_tickets_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flightbookapp/core/res/styles/app_theme.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
