@@ -11,16 +11,16 @@ class HotelCard extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return Container(
       padding: EdgeInsets.all(8),
-      margin: EdgeInsets.only(right: 14),
+      margin: EdgeInsets.only(right: 8),
       width: size.width * 0.6,
-      // height: 350,
+      height: 350,
       decoration: BoxDecoration(
           color: Colors.grey.shade300, borderRadius: BorderRadius.circular(22)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            // height: 180,
+            height: 180,
             decoration: BoxDecoration(
                 color: Colors.grey.shade300,
                 borderRadius: BorderRadius.circular(16),
