@@ -8,11 +8,11 @@ class HotelCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    // final size = MediaQuery.of(context).size;
     return Container(
       padding: EdgeInsets.all(8),
       margin: EdgeInsets.only(right: 8),
-      width: size.width * 0.6,
+      width: 250,
       height: 350,
       decoration: BoxDecoration(
           color: Colors.grey.shade300, borderRadius: BorderRadius.circular(22)),
